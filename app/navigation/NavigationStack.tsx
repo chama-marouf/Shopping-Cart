@@ -45,6 +45,7 @@ const App: React.FC<IProps> = (props: IProps) => {
             headerTitleStyle: {
               fontWeight: 'bold',
             },
+
             headerRight: () => <ThemeController />,
           }}
         />
@@ -53,6 +54,16 @@ const App: React.FC<IProps> = (props: IProps) => {
           component={ProductsList}
           options={{
             title: 'Products List',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="Cart"
+          component={Cart}
+          options={{
+            title: 'Cart',
             headerTitleStyle: {
               fontWeight: 'bold',
             },

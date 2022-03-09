@@ -6,6 +6,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  buttonContainer: {
+    position: 'absolute',
+    bottom: 10,
+    right: 24,
+    left: 24,
+  },
+  button: {
+    backgroundColor: '#00BFFF',
+  },
 });
 
 export default styles;

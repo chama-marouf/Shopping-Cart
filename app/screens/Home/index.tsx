@@ -13,10 +13,9 @@ const Home: React.FC = () => {
   return (
     <View style={styles.container}>
       <Button
-        onLongPress={() => NavigationService.navigate('ProductsList')}
+        onPress={() => NavigationService.navigate('ProductsList')}
         icon="arrow-right"
-        mode="outlined"
-        onPress={onLogout}>
+        mode="outlined">
         Go to Products List
       </Button>
     </View>
