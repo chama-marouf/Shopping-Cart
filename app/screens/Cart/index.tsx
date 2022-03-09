@@ -5,7 +5,7 @@ import { View, FlatList } from 'react-native';
 import { Button } from 'react-native-paper';
 
 import styles from './styles';
-const Cart: React.FC = ({ navigation, route }) => {
+const Cart: React.FC = ({ route }) => {
   const cart = route.params.cart;
   console.log(cart, 'herererer');
   return (
@@ -17,7 +17,7 @@ const Cart: React.FC = ({ navigation, route }) => {
       />
       <View style={styles.buttonContainer}>
         <Button color="#fff" style={styles.button} icon="cart" mode="outlined">
-          Checkout
+          Buy
         </Button>
       </View>
     </View>
